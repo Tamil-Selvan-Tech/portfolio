@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@600&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Style+Script&family=Young+Serif&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-name:"Italiana",'sanserif';
+    --font-second:"Merriweather",'sanserif';
+    --color-major:'gradient-to-r from-white via-cyan-200 to-purple-200 bg-clip-text text-transparent';
+    --color-back: rgb(15, 23, 41);
+    --color-instagram: #E1306c;
+}
+.port-nav {
+  @apply 
+    text-white 
+    transition-all duration-300 ease-in-out
+    hover:text-yellow-300 
+    hover:border-b-2 
+    border-transparent 
+    hover:border-b-purple-700 
+    cursor-pointer;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.media-icon {
+    @apply  border-2 border-white  rounded-full opacity-80 transition delay-150  duration-250 ease-in-out 
+    translate-y-1 hover:scale-120  hover:opacity-100
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.project-nav {
+  @apply 
+    text-white font-medium tracking-wide
+    flex
+    h-11
+    px-6
+    items-center
+    justify-center
+    border 
+    border-transparent
+    rounded-full
+    backdrop-blur-sm bg-white/5
+    transition-all duration-300 ease-in-out
+    hover:text-yellow-300
+    hover:border-yellow-300
+    hover:bg-black/40
+    hover:shadow-[0_0_15px_rgba(255,215,0,0.8)]
+    hover:scale-105
+    cursor-pointer;
+    
+}
+
+.input-port{
+  @apply
+  border-[1.5px] border-yellow-300 
+  rounded-3xl pl-3 py-1.5 outline-none
+}
