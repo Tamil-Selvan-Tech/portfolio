@@ -3,6 +3,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { IoLogoGithub } from 'react-icons/io';
 import { FaInstagram } from 'react-icons/fa';
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Resume from '/resume-tamil.pdf';
 
 const HeroSection = () => {
     const fullText = 'A Web Developer';
@@ -85,7 +86,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className='flex flex-col sm:flex-row gap-5 mt-5'>
-                 <a href="#projects">  <button   className='
+                    <a href="#projects">  <button className='
                         text-white font-semibold border border-white 
                         p-2 rounded-md w-full sm:w-40
                         hover:bg-yellow-400 hover:text-black transition-colors duration-300
@@ -93,14 +94,19 @@ const HeroSection = () => {
                         
                     '>
                         See My Projects
-                    </button> </a> 
-                    <button className='
-                        text-black font-bold border p-2 rounded-md w-full sm:w-40
-                        bg-white hover:bg-black hover:text-white transition-colors duration-300
-                        cursor-pointer
-                    '>
+                    </button> </a>
+
+                    <a
+                        href="/resize-resume-tamil.pdf"
+                        download={Resume}
+                        className='
+    text-black font-bold border p-2 rounded-md w-full sm:w-40
+    bg-white hover:bg-black hover:text-white transition-colors duration-300
+    cursor-pointer text-center
+  '
+                    >
                         Download CV
-                    </button>
+                    </a>
                 </div>
 
                 <div className='
@@ -108,7 +114,7 @@ const HeroSection = () => {
                     justify-center md:justify-start
                 '>
                     <FaLinkedin size={30} className='text-white media-icon hover:bg-white hover:text-blue-600 p-[4px] rounded-md' />
-                   <a href="https://github.com/Tamil-Selvan-Tech?tab=repositories"> <IoLogoGithub size={30} className='bg-white media-icon p-[4px] rounded-md' /></a>
+                    <a href="https://github.com/Tamil-Selvan-Tech?tab=repositories"> <IoLogoGithub size={30} className='bg-white media-icon p-[4px] rounded-md' /></a>
                     <FaInstagram size={30} className='text-white media-icon hover:text-pink-500 p-[4px] rounded-md' />
                 </div>
             </div>

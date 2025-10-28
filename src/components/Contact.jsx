@@ -49,21 +49,21 @@ const Contact = () => {
             {/* Contact Info */}
             <div className='flex flex-col gap-4'>
               <div className='flex gap-4 items-center'>
-                <IoMdMail size={30} className='text-yellow-400 border border-gray-300 rounded-full p-1.5' />
+                <IoMdMail size={30} className='text-yellow-400 border border-gray-300 rounded-full p-1.5 cursor-pointer' />
                 <div className='text-sm'>
                   <h3 className='font-medium'>Email</h3>
                   <p>tamillselvan1010@gmail.com</p>
                 </div>
               </div>
               <div className='flex gap-4 items-center'>
-                <MdOutlineLocalPhone size={30} className='text-yellow-400 border border-gray-300 rounded-full p-1.5' />
+                <MdOutlineLocalPhone size={30} className='text-yellow-400 border border-gray-300 rounded-full p-1.5 cursor-pointer' />
                 <div className='text-sm'>
                   <h3 className='font-medium'>Phone</h3>
                   <p>+91 6379585809</p>
                 </div>
               </div>
               <div className='flex gap-4 items-center'>
-                <FaLocationDot size={30} className='text-yellow-400 border border-gray-300 rounded-full p-1.5' />
+                <FaLocationDot size={30} className='text-yellow-400 border border-gray-300 rounded-full p-1.5 cursor-pointer' />
                 <div className='text-sm'>
                   <h3 className='font-medium'>Location</h3>
                   <p>Pallipalayam</p>
