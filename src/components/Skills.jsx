@@ -18,11 +18,12 @@ const Skills = () => {
     { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
     { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
     { name: "React.js", icon: <FaReact className="text-blue-400" /> },
-    { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
+    { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
-    { name: "Python", icon: <FaPython className="text-yellow-300" /> },
     { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
+    { name: "Python", icon: <FaPython className="text-yellow-300" /> },
+
   ];
 
   const certificates = [
@@ -110,11 +111,10 @@ const Skills = () => {
               <div
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-2.5 h-2.5 rounded-full cursor-pointer transition ${
-                  idx === currentIndex
-                    ? "bg-yellow-300 scale-110"
-                    : "bg-gray-500 hover:bg-gray-400"
-                }`}
+                className={`w-2.5 h-2.5 rounded-full cursor-pointer transition ${idx === currentIndex
+                  ? "bg-yellow-300 scale-110"
+                  : "bg-gray-500 hover:bg-gray-400"
+                  }`}
               ></div>
             ))}
           </div>

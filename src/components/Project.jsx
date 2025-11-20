@@ -6,7 +6,7 @@ const Project = () => {
     { title: "Online Attendance", desc: "Track student attendance.", tags: ["React.js", "Tailwind"], img: "./Attendence/login.png", link: "#", category: "Front-End" },
     { title: "QR-Code-Generator", desc: "Generate the QR-code", tags: ["React", "API"], img: "./QR-img.png", link: "#", category: "Web Development" },
     { title: "Password-generator", desc: "Generate the password for you.", tags: ["React JS"], img: "password.jpeg", link: "#", category: "Front-End" },
-    { title: "Weather App", desc: "Live weather updates.", tags: ["React", "API"], img: "./weather.png", link: "#", category: "Front-End" },
+    { title: "Weather App", desc: "Live weather updates.", tags: ["React", "API"], img: "./weather.png", link: "https://aagaayaneram.netlify.app/", category: "Front-End" },
     { title: "To-Do App", desc: "Organize daily tasks.", tags: ["React", "mongo DB"], img: "./to-do.png", link: "#", category: "Web Development" },
     { title: "Stop Watch", desc: "Track. Measure. Achieve", tags: ["HTML","CSS","Javascript"], img: "Stop-watch.png", link: "#", category: "Web Development" },
     { title: "canteen Order System", desc: "Booking Your Order.", tags: ["React.js", "Tailwind"], img: "./order-booking/order-page.png", link: "#", category: "Front-End" },
@@ -129,7 +129,7 @@ const Project = () => {
                       ))}
                     </div>
                     <a
-                      // href={project.link}
+                      href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full text-center bg-yellow-400 text-black text-xs font-semibold px-3 py-1.5 rounded-md hover:bg-yellow-300 mt-3"
