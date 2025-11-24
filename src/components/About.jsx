@@ -90,7 +90,7 @@ const About = () => {
         >
           <p className="text-white leading-relaxed mb-3 md:mb-4">
             I’m a passionate Web Developer with a strong foundation in
-            JavaScript, React.js, HTML, and CSS. I’m currently pursuing my B.Sc.
+            JavaScript, React.js, HTML, and CSS. I have completed B.Sc.
             in Computer Technology at Erode Arts and Science College, where
             I’ve developed a keen interest in building responsive, user-friendly
             web applications.
