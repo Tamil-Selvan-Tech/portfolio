@@ -50,8 +50,8 @@ const HeroSection = () => {
             <div className="
                 flex flex-col 
                 justify-center
-                h-full
-                w-full
+                h-screen
+                w-screen
                 items-center md:items-start
                 text-center md:text-left
                 gap-6
