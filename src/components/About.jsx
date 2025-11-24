@@ -40,7 +40,7 @@ const About = () => {
             rounded-full 
             shadow-[0_0_25px_rgba(168,85,247,0.7)]
             hover:scale-105 transition-transform duration-500
-            w-60 h-70
+            w-60 h-60
             md:w-60 md:h-60
             flex items-center justify-center
             overflow-hidden
