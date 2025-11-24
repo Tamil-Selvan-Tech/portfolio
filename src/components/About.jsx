@@ -11,7 +11,7 @@ const About = () => {
         flex 
         flex-col 
         md:grid 
-        md:grid-cols-[35%_65%]
+        md:grid-cols-[30%_70%]
       "
     >
 
