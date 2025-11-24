@@ -11,7 +11,7 @@ const HeroSection = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [charIndex, setCharIndex] = useState(0);
 
-    // TYPING ANIMATION
+    // TYPING EFFECT 
     useEffect(() => {
         let speed = isDeleting ? 60 : 140;
 
@@ -42,22 +42,21 @@ const HeroSection = () => {
                 w-full min-h-screen 
                 bg-black
                 px-6 md:px-20
-                py-10
+                pt-28 pb-16
             "
         >
 
-            {/* LEFT → TEXT */}
+            {/* LEFT SIDE — MOBILE OPTIMIZED */}
             <div className="
                 flex flex-col 
                 justify-center
-                h-screen
-                w-screen
                 items-center md:items-start
                 text-center md:text-left
-                gap-6
+                gap-5 md:gap-6
             ">
+
                 <p className="
-                    text-xl md:text-2xl 
+                    text-2xl md:text-3xl 
                     bg-gradient-to-r from-cyan-200 via-blue-300 to-white
                     bg-clip-text text-transparent
                 ">
@@ -65,8 +64,9 @@ const HeroSection = () => {
                 </p>
 
                 <h1 className="
-                    text-4xl sm:text-6xl md:text-7xl 
+                    text-5xl sm:text-6xl md:text-7xl 
                     font-name 
+                    leading-tight
                     bg-gradient-to-r from-white/80 via-cyan-300 to-purple-400
                     bg-clip-text text-transparent
                 ">
@@ -74,24 +74,22 @@ const HeroSection = () => {
                 </h1>
 
                 <p className="
-                    text-xl md:text-2xl font-second font-semibold
+                    text-2xl sm:text-3xl md:text-4xl 
+                    font-second font-semibold
                     bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400
                     bg-clip-text text-transparent
-                    flex items-center
-                    gap-1
+                    flex items-center gap-1
                 ">
                     {text}
                     <span className="animate-pulse">|</span>
                 </p>
 
-                {/* FIXED BUTTON SIZE */}
-                <div className="
-                    flex flex-col sm:flex-row 
-                    gap-4 mt-4
-                ">
+                {/* BUTTONS */}
+                <div className="flex flex-col sm:flex-row gap-4 mt-4">
                     <a href="#projects">
                         <button className="
-                            w-44 h-12
+                            w-56 h-14
+                            text-lg
                             text-white font-semibold 
                             border border-white
                             rounded-md
@@ -104,7 +102,8 @@ const HeroSection = () => {
 
                     <a href="/resume-tamil.pdf" download>
                         <button className="
-                            w-44 h-12
+                            w-56 h-14
+                            text-lg
                             font-bold
                             bg-black text-white
                             border border-white
@@ -118,9 +117,9 @@ const HeroSection = () => {
                 </div>
 
                 {/* SOCIAL ICONS */}
-                <div className="flex gap-6 mt-5">
+                <div className="flex gap-8 mt-5">
                     <FaLinkedin
-                        size={32}
+                        size={36}
                         className="
                             text-white 
                             hover:text-blue-500 
@@ -132,7 +131,7 @@ const HeroSection = () => {
 
                     <a href="https://github.com/Tamil-Selvan-Tech?tab=repositories">
                         <IoLogoGithub
-                            size={32}
+                            size={36}
                             className="
                                 text-white 
                                 bg-white/10 p-1 rounded-md 
@@ -145,7 +144,7 @@ const HeroSection = () => {
                     </a>
 
                     <FaInstagram
-                        size={32}
+                        size={36}
                         className="
                             text-white 
                             hover:text-pink-500 
@@ -157,21 +156,18 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            {/* RIGHT → IMAGE (VISIBLE ONLY ON LAPTOP / DESKTOP) */}
+            {/* RIGHT → IMAGE (DESKTOP ONLY) */}
             <div className="
                 hidden md:flex
                 justify-end 
                 items-center 
-                mt-10 md:mt-0
             ">
                 <DotLottieReact
                     src="https://lottie.host/dfac3ad0-0e66-4b41-a0aa-12c16aafef25/26pDYJXUpe.lottie"
                     loop
                     autoplay
                     className="
-                        w-64 h-64 
-                        sm:w-96 sm:h-96 
-                        md:w-[85%] md:h-[85%]
+                        w-[85%] h-[85%]
                     "
                 />
             </div>
