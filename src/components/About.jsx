@@ -49,7 +49,7 @@ const About = () => {
             shadow-[0_0_25px_rgba(168,85,247,0.7)]
             hover:scale-105 
             transition-transform duration-500
-            w-36 h-36
+            w-60 h-60
             sm:w-44 sm:h-44
             md:w-56 md:h-56
             flex items-center justify-center
