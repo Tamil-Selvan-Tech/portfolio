@@ -59,7 +59,7 @@ const About = () => {
       <div
         className='
           flex justify-center items-center
-          px-6 py-10
+          px-6 py-7
           md:h-screen
         '
       >
