@@ -50,6 +50,7 @@ const HeroSection = () => {
             <div className="
                 flex flex-col 
                 justify-center
+            
                 items-center md:items-start
                 text-center md:text-left
                 gap-6
@@ -155,10 +156,10 @@ const HeroSection = () => {
                 </div>
             </div>
 
-
-            {/* RIGHT → IMAGE (RIGHT ALIGNED ALWAYS) */}
+            {/* RIGHT → IMAGE (VISIBLE ONLY ON LAPTOP / DESKTOP) */}
             <div className="
-                flex justify-center md:justify-end 
+                hidden md:flex
+                justify-end 
                 items-center 
                 mt-10 md:mt-0
             ">
@@ -166,7 +167,11 @@ const HeroSection = () => {
                     src="https://lottie.host/dfac3ad0-0e66-4b41-a0aa-12c16aafef25/26pDYJXUpe.lottie"
                     loop
                     autoplay
-                    className="w-64 h-64 sm:w-96 sm:h-96 md:w-[85%] md:h-[85%]"
+                    className="
+                        w-64 h-64 
+                        sm:w-96 sm:h-96 
+                        md:w-[85%] md:h-[85%]
+                    "
                 />
             </div>
 

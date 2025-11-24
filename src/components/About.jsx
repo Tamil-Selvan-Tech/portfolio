@@ -14,8 +14,9 @@ const About = () => {
         bg-black
       '
     >
-      {/* Left side - Heading + Lottie */}
-      <div className='
+      {/* Left side - Heading + Lottie (icon hidden on mobile) */}
+      <div
+        className='
           text-white 
           flex flex-col items-center justify-center 
           animate-fadeIn 
@@ -38,6 +39,7 @@ const About = () => {
           About Me
         </h1>
 
+        {/* Lottie Icon (HIDDEN IN MOBILE) */}
         <div
           className='
             p-3 rounded-full 
@@ -46,6 +48,7 @@ const About = () => {
             mb-6
             w-48 h-48
             md:w-60 md:h-60
+            hidden md:block
           '
         >
           <DotLottieReact
@@ -58,7 +61,8 @@ const About = () => {
       </div>
 
       {/* Right side - Text card */}
-      <div className='
+      <div
+        className='
           flex justify-center items-center 
           px-6
           py-10
