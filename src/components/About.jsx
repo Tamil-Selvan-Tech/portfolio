@@ -1,5 +1,4 @@
 import React from 'react';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const About = () => {
   return (
@@ -14,73 +13,67 @@ const About = () => {
         bg-black
       '
     >
-      {/* Left side - Heading + Lottie (icon hidden on mobile) */}
+      {/* LEFT SIDE - Heading + Image */}
       <div
         className='
           text-white 
           flex flex-col items-center justify-center 
-          animate-fadeIn 
-          px-6
-          py-10
+          px-6 py-10
           md:h-screen
         '
       >
+        {/* Heading */}
         <h1
           className='
-            text-3xl font-extrabold uppercase tracking-wide
-            bg-yellow-300
-            bg-clip-text text-transparent
-            mb-6
-            text-center
-            md:text-left
-            md:ml-10
+            text-3xl md:text-4xl font-extrabold 
+            uppercase tracking-wide
+            bg-yellow-300 bg-clip-text text-transparent
+            mb-6 text-center
           '
         >
           About Me
         </h1>
 
-        {/* Lottie Icon (HIDDEN IN MOBILE) */}
+        {/* IMAGE → NOW VISIBLE ON MOBILE */}
         <div
           className='
-            p-3 rounded-full 
-            shadow-[0_0_20px_rgba(168,85,247,0.6)]
+            rounded-full 
+            shadow-[0_0_25px_rgba(168,85,247,0.7)]
             hover:scale-105 transition-transform duration-500
-            mb-6
-            w-48 h-48
+            w-70 h-70
             md:w-60 md:h-60
-            hidden md:block
+            flex items-center justify-center
+            overflow-hidden
+            mb-6
           '
         >
-          <DotLottieReact
-            className='w-full h-full rounded-full'
-            src='https://lottie.host/236d15ca-8094-45ca-91bf-e102693658f8/LmeTLgtQuo.lottie'
-            loop
-            autoplay
+          <img
+            src="/tamil.jpeg"
+            alt="Tamil Selvan"
+            className='w-full h-full object-cover rounded-full'
           />
         </div>
       </div>
 
-      {/* Right side - Text card */}
+      {/* RIGHT SIDE - Text Card */}
       <div
         className='
-          flex justify-center items-center 
-          px-6
-          py-10
+          flex justify-center items-center
+          px-6 py-10
           md:h-screen
         '
       >
         <div
           className='
             border-2 border-purple-800 
-            text-[16px] 
+            text-[15px] md:text-[16px]
             rounded-2xl 
             w-full max-w-md 
             p-6 
             bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900
             shadow-lg shadow-purple-800/50
-            transition-all duration-500 ease-in-out
+            transition-all duration-500 
             hover:scale-105 hover:shadow-purple-500/80 hover:border-purple-500
-            animate-slideFade delay-500
           '
         >
           <p className='text-white leading-relaxed mb-4'>

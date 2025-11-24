@@ -55,9 +55,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center h-12 px-4 md:px-8">
 
         {/* LOGO - CHANGE BASED ON HOME VISIBILITY */}
-        <div className="text-yellow-300 font-bold text-2xl select-none">
+        <div className={`font-bold text-2xl select-none 
+  ${isHomeVisible ? "text-yellow-300" : "text-purple-600"}`}
+        >
           {isHomeVisible ? "My Portfolio" : "Tamil Selvan"}
         </div>
+
 
         {/* Hamburger (mobile) */}
         <button
