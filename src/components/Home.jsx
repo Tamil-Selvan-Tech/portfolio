@@ -43,6 +43,22 @@ const HeroSection = () => {
             min-h-screen
             bg-black
         '>
+            {/* Right Section (Lottie) */}
+            <div className='
+                flex w-full items-center justify-center 
+                p-6 md:p-0
+            '>
+                <DotLottieReact
+                    className='
+                        w-64 h-64 
+                        sm:w-96 sm:h-96 
+                        md:w-[80%] md:h-[80%]
+                    '
+                    src="https://lottie.host/dfac3ad0-0e66-4b41-a0aa-12c16aafef25/26pDYJXUpe.lottie"
+                    loop
+                    autoplay
+                />
+            </div>
             {/* Left Section */}
             <div className='
                 flex justify-center items-center text-center
@@ -119,22 +135,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            {/* Right Section (Lottie) */}
-            <div className='
-                flex w-full items-center justify-center 
-                p-6 md:p-0
-            '>
-                <DotLottieReact
-                    className='
-                        w-64 h-64 
-                        sm:w-96 sm:h-96 
-                        md:w-[80%] md:h-[80%]
-                    '
-                    src="https://lottie.host/dfac3ad0-0e66-4b41-a0aa-12c16aafef25/26pDYJXUpe.lottie"
-                    loop
-                    autoplay
-                />
-            </div>
+
         </section>
     );
 };

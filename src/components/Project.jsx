@@ -13,7 +13,7 @@ const Project = () => {
     { title: "Job Portal", desc: "The Intern Track", tags: ["React.js", "Tailwind"], img: "./intern.png", link: "#", category: "Front-End" },
   ];
 
-  const categories = ["All", "Web Development", "Front-End", "Back-End"];
+  const categories = ["All", "Web Development", "Front-End"];
   
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,7 +56,7 @@ const Project = () => {
   useEffect(() => {
     const slideInterval = setInterval(() => {
       nextSlide();
-    }, 5000);
+    }, 4000);
     return () => clearInterval(slideInterval);
   }, [filteredProjects.length, cardsPerPage]);
 
