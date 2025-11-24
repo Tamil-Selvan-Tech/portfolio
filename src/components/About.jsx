@@ -14,6 +14,7 @@ const About = () => {
         md:grid-cols-[35%_65%]
       "
     >
+
       {/* LEFT SIDE */}
       <div
         className="
@@ -21,11 +22,12 @@ const About = () => {
           flex flex-col 
           items-center 
           justify-center
-          px-6 
-          py-6 md:py-10   /* Reduced gap in mobile */
+          px-4 
+          py-6 md:py-10
           w-full
         "
       >
+
         {/* Heading */}
         <h1
           className="
@@ -33,7 +35,8 @@ const About = () => {
             font-extrabold 
             uppercase tracking-wide
             bg-yellow-300 bg-clip-text text-transparent
-            mb-4 md:mb-6 text-center   /* Reduced gap in mobile */
+            mb-3 md:mb-6
+            text-center
           "
         >
           About Me
@@ -46,12 +49,12 @@ const About = () => {
             shadow-[0_0_25px_rgba(168,85,247,0.7)]
             hover:scale-105 
             transition-transform duration-500
-            w-40 h-40
-            sm:w-48 sm:h-48
-            md:w-60 md:h-60
+            w-36 h-36
+            sm:w-44 sm:h-44
+            md:w-56 md:h-56
             flex items-center justify-center
             overflow-hidden
-            mb-2 md:mb-4   /* Smaller gap in mobile */
+            mb-4
           "
         >
           <img
@@ -67,9 +70,10 @@ const About = () => {
         className="
           flex 
           justify-center 
-          items-center
-          px-6 
-          py-6 md:py-10  /* Reduced gap in mobile */
+          items-start md:items-center
+          px-4 
+          pb-10 pt-2
+          md:py-10
           w-full
         "
       >
@@ -79,7 +83,7 @@ const About = () => {
             text-[15px] md:text-[16px]
             rounded-2xl 
             w-full max-w-xl 
-            p-5 md:p-6  /* Slightly reduced padding for mobile */
+            p-4 md:p-6
             bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900
             shadow-lg shadow-purple-800/50
             transition-all duration-500 
@@ -88,20 +92,19 @@ const About = () => {
             hover:border-purple-500
           "
         >
-          <p className="text-white leading-relaxed mb-3 md:mb-4">
+          <p className="text-white leading-relaxed mb-3">
             I’m a passionate Web Developer with a strong foundation in
             JavaScript, React.js, HTML, and CSS. I have completed B.Sc.
             in Computer Technology at Erode Arts and Science College, where
-            I’ve developed a keen interest in building responsive, user-friendly
+            I developed strong interest in building responsive, user-friendly
             web applications.
           </p>
 
           <p className="text-white leading-relaxed">
-            I enjoy turning ideas into interactive digital experiences and
-            constantly explore new tools and technologies to improve my skills.
-            From developing a modern Online Attendance System to contributing to
-            socially impactful projects, I aim to create solutions that are both
-            functional and meaningful.
+            I love turning ideas into interactive digital experiences and
+            constantly explore new tools & technologies. From developing an
+            Online Attendance System to creating modern UI components, I aim
+            to build meaningful and efficient web solutions.
           </p>
         </div>
       </div>
