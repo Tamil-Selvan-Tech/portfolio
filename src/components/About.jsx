@@ -21,7 +21,8 @@ const About = () => {
           flex flex-col 
           items-center 
           justify-center
-          px-6 py-10
+          px-6 
+          py-6 md:py-10   /* Reduced gap in mobile */
           w-full
         "
       >
@@ -32,7 +33,7 @@ const About = () => {
             font-extrabold 
             uppercase tracking-wide
             bg-yellow-300 bg-clip-text text-transparent
-            mb-6 text-center
+            mb-4 md:mb-6 text-center   /* Reduced gap in mobile */
           "
         >
           About Me
@@ -45,12 +46,12 @@ const About = () => {
             shadow-[0_0_25px_rgba(168,85,247,0.7)]
             hover:scale-105 
             transition-transform duration-500
-            w-48 h-48
-            sm:w-56 sm:h-56
+            w-40 h-40
+            sm:w-48 sm:h-48
             md:w-60 md:h-60
             flex items-center justify-center
             overflow-hidden
-            mb-4
+            mb-2 md:mb-4   /* Smaller gap in mobile */
           "
         >
           <img
@@ -67,7 +68,8 @@ const About = () => {
           flex 
           justify-center 
           items-center
-          px-6 py-10 
+          px-6 
+          py-6 md:py-10  /* Reduced gap in mobile */
           w-full
         "
       >
@@ -77,7 +79,7 @@ const About = () => {
             text-[15px] md:text-[16px]
             rounded-2xl 
             w-full max-w-xl 
-            p-6 
+            p-5 md:p-6  /* Slightly reduced padding for mobile */
             bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900
             shadow-lg shadow-purple-800/50
             transition-all duration-500 
@@ -86,7 +88,7 @@ const About = () => {
             hover:border-purple-500
           "
         >
-          <p className="text-white leading-relaxed mb-4">
+          <p className="text-white leading-relaxed mb-3 md:mb-4">
             I’m a passionate Web Developer with a strong foundation in
             JavaScript, React.js, HTML, and CSS. I’m currently pursuing my B.Sc.
             in Computer Technology at Erode Arts and Science College, where
