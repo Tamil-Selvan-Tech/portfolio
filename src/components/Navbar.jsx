@@ -52,10 +52,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-black/10 backdrop-blur-lg z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center h-12 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto flex justify-between items-center h-15 px-4 md:px-8">
 
         {/* LOGO - CHANGE BASED ON HOME VISIBILITY */}
-        <div className={`font-bold text-2xl select-none 
+        <div className={`font-bold text-3xl select-none 
   ${isHomeVisible ? "text-yellow-300" : "text-purple-600"}`}
         >
           {isHomeVisible ? "My Portfolio" : "Tamil Selvan"}
