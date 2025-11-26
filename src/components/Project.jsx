@@ -3,12 +3,10 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const Project = () => {
   const projects = [
-    { title: "Online Attendance", desc: "Track student attendance.", tags: ["React.js", "Tailwind"], img: "./Attendence/login.png", link: "#", category: "Front-End" },
+    { title: "Online Attendance", desc: "Track student attendance.", tags: ["React.js", "Tailwind"], img: "./Attendence/login.png", link: "https://attendance-project-vq9i.onrender.com/Login", category: "Front-End" },
     { title: "QR-Code-Generator", desc: "Generate the QR-code", tags: ["React", "API"], img: "./QR-img.png", link: "https://qr-code-generator-ti5a.onrender.com/", category: "Web Development" },
-    // { title: "Password-generator", desc: "Generate the password for you.", tags: ["React JS"], img: "password.jpeg", link: "#", category: "Front-End" },
     { title: "Weather App", desc: "Live weather updates.", tags: ["React", "API"], img: "./weather.png", link: "https://aagaayaneram.netlify.app/", category: "Front-End" },
     { title: "To-Do App", desc: "Organize daily tasks.", tags: ["React", "mongo DB"], img: "./to-do-app.png", link: "https://to-do-list-mbwt.onrender.com", category: "Web Development" },
-    // { title: "Stop Watch", desc: "Track. Measure. Achieve", tags: ["HTML","CSS","Javascript"], img: "Stop-watch.png", link: "#", category: "Web Development" },
     { title: "canteen Order System", desc: "Booking Your Order.", tags: ["React.js", "Tailwind"], img: "./order-booking/order-page.png", link: "#", category: "Front-End" },
     { title: "The Intern Track ", desc: "Job Portal", tags: ["React.js", "Tailwind"], img: "./intern.png", link: "https://intern-track.onrender.com/", category: "Front-End" },
   ];
