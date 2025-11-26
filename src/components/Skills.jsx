@@ -28,7 +28,7 @@ const Skills = () => {
 
   const certificates = [
     { img: "/certificates/nextlogic.jpg", caption: "NextLogic Workshop" },
-    { img: "/certificates/tech-vedhu.png", caption: "Tech Vedhu Hackathon" },
+    { img: "/certificates/tech-vedhu.png", caption: "Web Development -Tech Vedhu " },
     { img: "/certificates/UI-UX.jpeg", caption: "UI/UX Design Course" },
   ];
 
@@ -57,7 +57,7 @@ const Skills = () => {
           SKILLS
         </h1>
 
-        <div className="grid grid-cols-3 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 max-w-sm sm:max-w-md mx-auto">
+        <div className="grid grid-cols-3 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-5 max-w-sm sm:max-w-md mx-auto">
           {skills.map((skill, index) => (
             <div
               key={index}

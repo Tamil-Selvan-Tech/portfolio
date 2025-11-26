@@ -4,13 +4,13 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const Project = () => {
   const projects = [
     { title: "Online Attendance", desc: "Track student attendance.", tags: ["React.js", "Tailwind"], img: "./Attendence/login.png", link: "#", category: "Front-End" },
-    { title: "QR-Code-Generator", desc: "Generate the QR-code", tags: ["React", "API"], img: "./QR-img.png", link: "#", category: "Web Development" },
-    { title: "Password-generator", desc: "Generate the password for you.", tags: ["React JS"], img: "password.jpeg", link: "#", category: "Front-End" },
+    { title: "QR-Code-Generator", desc: "Generate the QR-code", tags: ["React", "API"], img: "./QR-img.png", link: "https://qr-code-generator-ti5a.onrender.com/", category: "Web Development" },
+    // { title: "Password-generator", desc: "Generate the password for you.", tags: ["React JS"], img: "password.jpeg", link: "#", category: "Front-End" },
     { title: "Weather App", desc: "Live weather updates.", tags: ["React", "API"], img: "./weather.png", link: "https://aagaayaneram.netlify.app/", category: "Front-End" },
-    { title: "To-Do App", desc: "Organize daily tasks.", tags: ["React", "mongo DB"], img: "./to-do.png", link: "#", category: "Web Development" },
-    { title: "Stop Watch", desc: "Track. Measure. Achieve", tags: ["HTML","CSS","Javascript"], img: "Stop-watch.png", link: "#", category: "Web Development" },
+    { title: "To-Do App", desc: "Organize daily tasks.", tags: ["React", "mongo DB"], img: "./to-do-app.png", link: "https://to-do-list-mbwt.onrender.com", category: "Web Development" },
+    // { title: "Stop Watch", desc: "Track. Measure. Achieve", tags: ["HTML","CSS","Javascript"], img: "Stop-watch.png", link: "#", category: "Web Development" },
     { title: "canteen Order System", desc: "Booking Your Order.", tags: ["React.js", "Tailwind"], img: "./order-booking/order-page.png", link: "#", category: "Front-End" },
-    { title: "Job Portal", desc: "The Intern Track", tags: ["React.js", "Tailwind"], img: "./intern.png", link: "#", category: "Front-End" },
+    { title: "The Intern Track ", desc: "Job Portal", tags: ["React.js", "Tailwind"], img: "./intern.png", link: "https://intern-track.onrender.com/", category: "Front-End" },
   ];
 
   const categories = ["All", "Web Development", "Front-End"];
@@ -63,7 +63,7 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="bg-black min-h-screen w-full flex flex-col items-center gap-6 pt-10 px-4"
+      className="bg-black min-h-screen w-full flex flex-col items-center gap-6 pt-15 px-4"
     >
       <h1 className="text-yellow-300 text-3xl font-bold text-center">PROJECTS</h1>
 
@@ -114,11 +114,11 @@ const Project = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h2 className="text-yellow-300 text-base sm:text-sm font-semibold mt-2">
+                    <h2 className="text-yellow-300 text-base sm:text-sm font-semibold text-center mt-2">
                       {project.title}
                     </h2>
-                    <p className="text-white text-sm sm:text-xs mt-1">{project.desc}</p>
-                    <div className="flex flex-wrap gap-1 mt-2">
+                    <p className="text-white text-sm sm:text-xs mt-1 text-center">{project.desc}</p>
+                    <div className="flex flex-wrap gap-1 mt-2 justify-center">
                       {project.tags.map((tag, i) => (
                         <span
                           key={i}
