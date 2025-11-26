@@ -3,7 +3,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const Project = () => {
   const projects = [
-    { title: "Online Attendance", desc: "Track student attendance.", tags: ["React.js", "Tailwind"], img: "./Attendence/login.png", link: "https://attendance-project-vq9i.onrender.com/Login", category: "Front-End" },
+    { title: "Online Attendance", desc: "Track student attendance.", tags: ["React.js", "Tailwind"], img: "./Attendence/login.png", link: "https://online-attendance-project.onrender.com", category: "Front-End" },
     { title: "QR-Code-Generator", desc: "Generate the QR-code", tags: ["React", "API"], img: "./QR-img.png", link: "https://qr-code-generator-ti5a.onrender.com/", category: "Web Development" },
     { title: "Weather App", desc: "Live weather updates.", tags: ["React", "API"], img: "./weather.png", link: "https://aagaayaneram.netlify.app/", category: "Front-End" },
     { title: "To-Do App", desc: "Organize daily tasks.", tags: ["React", "mongo DB"], img: "./to-do-app.png", link: "https://to-do-list-mbwt.onrender.com", category: "Web Development" },
