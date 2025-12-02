@@ -5,12 +5,12 @@ const About = () => {
     <section
       id='about'
       className='
-        grid 
-        grid-cols-1 
-        md:grid-cols-[30%_70%] 
-        w-full 
-        min-h-screen 
-        bg-black
+        w-full min-h-screen bg-black 
+        grid grid-cols-1 
+        md:grid-cols-2 
+        gap-6 
+        px-6 md:px-12 lg:px-20 
+        py-10
       '
     >
       {/* LEFT SIDE - Heading + Image */}
@@ -18,34 +18,28 @@ const About = () => {
         className='
           text-white 
           flex flex-col items-center justify-center 
-          px-6 py-8
-          md:h-screen
+          gap-6
         '
       >
-        {/* Heading */}
         <h1
           className='
-            text-3xl md:text-4xl font-extrabold 
+            text-4xl md:text-5xl font-extrabold 
             uppercase tracking-wide
             bg-yellow-300 bg-clip-text text-transparent
-            mb-4 md:mb-6 text-center
+            text-center
           '
         >
           About Me
         </h1>
 
-        {/* Image — NOW visible in mobile too */}
         <div
           className='
             rounded-full 
             shadow-[0_0_25px_rgba(168,85,247,0.7)]
             hover:scale-105 transition-transform duration-500
-            w-60 h-60
-            sm:w-48 sm:h-48
-            md:w-60 md:h-60
+            w-52 h-52 md:w-64 md:h-64
             flex items-center justify-center
             overflow-hidden
-            mb-2
           '
         >
           <img
@@ -56,28 +50,30 @@ const About = () => {
         </div>
       </div>
 
-      {/* RIGHT SIDE - Text Card */}
+      {/* RIGHT SIDE - Text */}
       <div
         className='
-          flex justify-center items-start md:items-center
-          px-6 py-2 md:py-10
-          w-full
+          flex justify-center items-center
+          text-white
         '
       >
         <div
           className='
             border-2 border-purple-800 
-            text-[15px] md:text-[16px]
             rounded-2xl 
-            w-full max-w-md 
-            p-5 md:p-6
+            w-full 
+            p-6 md:p-8
             bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900
+            text-[15px] md:text-[17px]
+            leading-relaxed
             shadow-lg shadow-purple-800/50
             transition-all duration-500 
-            hover:scale-105 hover:shadow-purple-500/80 hover:border-purple-500
+            hover:scale-[1.02] 
+            hover:shadow-purple-500/80 
+            hover:border-purple-500
           '
         >
-          <p className='text-white leading-relaxed mb-3'>
+          <p>
             I’m a passionate Web Developer with a strong foundation in
             JavaScript, React.js, HTML, and CSS. I completed my B.Sc.
             in Computer Technology at Erode Arts and Science College, where
@@ -85,11 +81,12 @@ const About = () => {
             web applications.
           </p>
 
-          <p className='text-white leading-relaxed'>
+          <p className='mt-4'>
             I love turning ideas into interactive digital experiences and
             constantly explore new tools and technologies. From developing a
             modern Online Attendance System to designing UI components, I focus
-            on creating meaningful and functional solutions.
+            on creating meaningful and functional solutions that improve user
+            interaction.
           </p>
         </div>
       </div>
