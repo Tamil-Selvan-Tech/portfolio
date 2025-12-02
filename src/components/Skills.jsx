@@ -30,6 +30,7 @@ const Skills = () => {
     { img: "/certificates/nextlogic.jpg", caption: "NextLogic Workshop" },
     { img: "/certificates/tech-vedhu.png", caption: "Web Development -Tech Vedhu " },
     { img: "/certificates/UI-UX.jpeg", caption: "UI/UX Design Course" },
+    { img: "/certificates/ML-AND-DS.jpeg", caption: "Add-On Course: Machine Learning & Data Science" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
