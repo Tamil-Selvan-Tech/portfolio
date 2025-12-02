@@ -23,7 +23,7 @@ const About = () => {
       >
         <h1
           className='
-            text-4xl md:text-5xl font-extrabold 
+            text-4xl md:text-5xl font-extrabold  mb-7
             uppercase tracking-wide
             bg-yellow-300 bg-clip-text text-transparent
             text-center

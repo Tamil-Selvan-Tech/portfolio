@@ -52,10 +52,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-black/10 backdrop-blur-lg z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center h-15 px-4 md:px-8">
+      <div className="max-w-screen mx-auto flex justify-between items-center h-15 px-4 md:px-8">
 
         {/* LOGO - CHANGE BASED ON HOME VISIBILITY */}
-        <div className={`font-bold text-3xl select-none 
+        <div className={`font-bold text-4xl select-none 
   ${isHomeVisible ? "text-yellow-300" : "text-purple-600"}`}
         >
           {isHomeVisible ? "My Portfolio" : "Tamil Selvan"}
@@ -85,7 +85,7 @@ const Navbar = () => {
           className={`
             fixed top-14 left-0 w-full h-[calc(100vh-3.5rem)]
             bg-black/95 flex flex-col items-center justify-center
-            space-y-8 text-lg font-semibold text-yellow-300
+            space-y-8 text-xl font-semibold text-yellow-300
             transition-all duration-300 md:static md:flex md:flex-row md:space-x-10 md:space-y-0
             md:bg-transparent md:w-auto md:h-auto
             
